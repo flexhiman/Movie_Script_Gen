@@ -1,55 +1,40 @@
-# Movie_Script_Gen
-
+# Movie Script Generator
 
 ## Overview
 
-The **Movie Script Generator** is a Python-based application that uses OpenAI's GPT-3.5-turbo language model to create dynamic and imaginative movie scripts. The application generates creative scripts complete with dialogues, settings, and character interactions by providing inputs like scenario topic, character names, locations, and emotions.
+The Movie Script Generator is a Python application that utilizes the OpenAI GPT-3.5-turbo language model to create imaginative and dynamic movie scripts based on user input. The generated scripts include characters, locations, and emotions, providing a foundation for creative storytelling.
 
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
 
-- **Python 3.x**
-- **OpenAI Python library**  
-  Install it using:
+- Python 3.x
+- OpenAI Python library (install using `pip install openai`)
+- dotenv Python library (install using `pip install python-dotenv`)
 
-  ```bash
-  pip install openai
-  
-- **dotenv Python library**
-```bash
-     pip install python-dotenv
-```
-- **Setup**
-Clone the repository:
+## Setup
 
-```bash
-     git clone <repository_url>
-```
+1. **Clone the repository:**
 
-- **Create a .env file in the root directory of the project, and add your OpenAI API key:**
+   ```bash
+   git clone <repository_url>
+   
 
-```env
-Copy code
-TEST_OPENAI_API_KEY=<your_api_key>
-```
-- **Install dependencies:**
+Create a .env file in the project root and add your OpenAI API key:
+`TEST_OPENAI_API_KEY=<your_api_key>`
 
-```bash
-Copy code
-pip install -r requirements.txt
-```
-- **Usage**
+**Usage**
+
 Run the movie script generator:
+bash
+Copy code
+`python test_case.py`
+Follow the prompts:
+Enter the scenario topic, character names, location names, and emotions as prompted.
+Generate a script:
+The application will create a movie script based on your input, featuring characters, locations, and emotions.
 
-```bash
-python test_case.py
-```
+**Configuration**
 
-### Follow the prompts:
+Adjust the determine_emotion function in the test_case.py file to customize emotion determination based on dialogue.
 
-- Enter the scenario topic (e.g., action, comedy, thriller, etc.)
-- Provide character names
-- Provide location names
-- Define the emotions for the characters
-### The application will generate a movie script based on your input, complete with dialogues, locations, and emotions.
